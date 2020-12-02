@@ -1,6 +1,12 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ScreenShotter
@@ -15,15 +21,6 @@ namespace ScreenShotter
 
         [DllImport("User32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-
-        private void SelectArea_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
-            }
-        }
 
         public SelectArea()
         {
@@ -82,6 +79,22 @@ namespace ScreenShotter
                 else if (Right.Contains(cursor)) m.Result = (IntPtr)HTRIGHT;
                 else if (Bottom.Contains(cursor)) m.Result = (IntPtr)HTBOTTOM;
             }
+        }
+
+        private void panelDrag_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            }
+        }
+
+        private void btnCaptureThis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Save save = new Save(this.Location.X, this.Location.Y, this.Width, this.Height, this.Size);
+            save.Show();
         }
 
     }
