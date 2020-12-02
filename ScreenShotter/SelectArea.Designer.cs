@@ -33,16 +33,16 @@ namespace ScreenShotter
             // 
             // SelectArea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "SelectArea";
-            this.Text = "SelectArea";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SelectArea_MouseDown);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelDrag;
+        private System.Windows.Forms.Button btnCaptureThis;
     }
 }
