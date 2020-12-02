@@ -15,6 +15,20 @@ namespace ScreenShotter
         public Form1()
         {
             InitializeComponent();
+
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "frmHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Home";
+
+            this.btnCapture.Name = "btnCapture";
+            this.btnCapture.Text = "Capture";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

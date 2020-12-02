@@ -1,0 +1,10 @@
+C:\Dev\C#\ScreenshotProject\ScreenShotter\bin\Debug\ScreenShotter.exe.config
+C:\Dev\C#\ScreenshotProject\ScreenShotter\bin\Debug\ScreenShotter.exe
+C:\Dev\C#\ScreenshotProject\ScreenShotter\bin\Debug\ScreenShotter.pdb
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.csprojAssemblyReference.cache
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.Form1.resources
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.Properties.Resources.resources
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.csproj.GenerateResource.cache
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.csproj.CoreCompileInputs.cache
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.exe
+C:\Dev\C#\ScreenshotProject\ScreenShotter\obj\Debug\ScreenShotter.pdb
